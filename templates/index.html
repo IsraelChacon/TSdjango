@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/miestilo.css' %}">
+    <title>Paginona</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Intereses Favoritos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{interes1}}</td>
+            </tr>
+            <tr>
+                <td>{{interes2}}</td>
+            </tr>
+            <tr>
+                <td>{{interes3}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <br/>
+    <div class="divson">
+        <img src="{% static 'images/fondo.jpg'%}" alt="Un cachillo del mapa">
+        <img src="{% static 'images/thebig.jpg' %}" alt="La teoria del big bang">
+        <img src="{% static 'images/coffee.jpg' %}" alt="Una tasilla de cafe">
+    </div>
+</body>
+</html>
